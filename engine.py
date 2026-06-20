@@ -88,6 +88,8 @@ class Engine:
         brain = Brain()
         if not brain.ready:
             self._emit("system", brain.error)
+        import server as _server
+        _server.start(brain)
 
         listener = self._open_listener()
         if listener is None:
