@@ -1,0 +1,11 @@
+# Runtime + build dependencies for the Jarvis menu-bar app (Python 3.12).
+# Cloud-only: Groq powers the brain and speech-to-text, so no torch/whisper.
+rumps
+sounddevice
+numpy
+onnxruntime
+openwakeword
+requests
+ddgs
+# Packaging (build the .app):
+py2app
